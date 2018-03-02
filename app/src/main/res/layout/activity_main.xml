@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.encryption.MainActivity"
+    android:background="#d6d7d7"
+    >
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="Encrypt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Input Path"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#de000000"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintTop_toTopOf="@+id/inpath" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:text="Output path"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#de000000"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/outpath"
+        tools:layout_constraintBaseline_creator="1" />
+
+    <EditText
+        android:id="@+id/inpath"
+        android:layout_width="234dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="34dp"
+        android:background="#ffffffff"
+        android:ems="10"
+        android:inputType="textUri"
+        android:text="/storage/emulated/0/hii/"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/outpath"
+        android:layout_width="223dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="184dp"
+        android:background="#ffffffff"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
